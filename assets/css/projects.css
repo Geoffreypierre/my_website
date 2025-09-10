@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@font-face {
+    font-family: comfortaa_regular;
+    src: url('../font/comfortaa/Comfortaa-Regular.ttf');
+}
+
+@font-face {
+    font-family: comfortaa_light;
+    src: url('../font/comfortaa/Comfortaa-Light.ttf');
+}
+
+@font-face {
+    font-family: comfortaa_bold;
+    src: url('../font/comfortaa/Comfortaa-Bold.ttf');
+}
+
+.scale_025 {
+    transition: 0.5s;
+}
+
+.scale_025:hover {
+    transform: scale(1.025);
+}
+
+a {
+    text-decoration: none;
+}
+
+.work__projects__title {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: comfortaa_bold;
+    margin: 50px auto;
+}
+
+.projects__title {
+    color: #ceffe9;
+    font-family: comfortaa_bold;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.projects__preview__text {
+    color: #ffffff;
+    font-family: comfortaa_light;
+    padding: 30px 50px;
+    background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(59, 147, 110, 0.2) 0%, rgba(110, 244, 202, 0.0447917) 77.08%, rgba(70, 213, 174, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    backdrop-filter: blur(40px);
+    border-radius: 14px;
+    width: 350px;
+}
+
+.projects__single {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 310px;
+    margin: 100px auto;
+}
+
+
+.projects__text__container {
+    text-align: left;
+    position: absolute;
+    right: 43%;
+}
+
+.projects__text__container__invert {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: right;
+    margin-left: 43%;
+}
+
+
+.projects__img__container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 55%;
+}
+
+.projects__img__container__invert {
+    text-align: left;
+    position: absolute;
+    right: 55%;
+}
+
+.svg__background__experience {
+    height: 300px;
+    width: 300px;
+    opacity: 80%;
+    position: absolute;
+    left: -150px;
+    z-index: -1;
+}
+
+.svg__background__projects__invert {
+    height: 300px;
+    width: 300px;
+    opacity: 80%;
+    position: absolute;
+    right: -150px;
+    z-index: -1;
+}
+
+.projects__picture__background__effect {
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 525px;
+    height: 250px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.projects__picture__background__effect__invert__power4ia {
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 290px;
+    height: 352px;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+.projects__picture__background__effect__invert__smartchess {
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 150px;
+    height: 352px;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+
+.projects__picture__background__effect__invert {
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 525px;
+    height: 250px;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+.projects__picture {
+    border: solid 1px black;
+    width: 525px;
+    margin: 35px auto auto 35px;
+    border-radius: 10px;
+}
+
+.projects__picture__invert {
+    border: solid 1px black;
+    height: 350px;
+    margin: 35px 35px auto auto;
+    border-radius: 10px;
+}

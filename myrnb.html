@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - MyRNB</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/icon.ico">
+  <link href="assets/css/myrnb.css" rel="stylesheet">
+</head>
+<body>
+<header class="l-header">
+  <nav class="nav">
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="scale_2 nav__item"><a href="index.html" class="nav__link">À propos</a></li>
+        <li class="scale_2 nav__item"><a href="index.html#skills" class="nav__link">Compétences</a></li>
+        <li class="scale_2 nav__item"><a href="#job" class="nav__link">Expériences</a></li>
+        <li class="scale_2 nav__item"><a href="personnalsProjects.html" class="nav__link">Projets</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="floating__elements">
+  <div class="floating__element">💼</div>
+  <div class="floating__element">🏢</div>
+  <div class="floating__element">📱</div>
+  <div class="floating__element">🔧</div>
+  <div class="floating__element">📊</div>
+</div>
+
+<div class="myrnb__container">
+  <div class="myrnb__hero">
+    <h1 class="myrnb__title">MyRNB</h1>
+    <p class="myrnb__subtitle">Intranet d'Entreprise Nouvelle Génération</p>
+
+    <div class="myrnb__description">
+      Plateforme intranet moderne de Razel-Bec conçue pour centraliser et optimiser la gestion des ressources humaines, projets BTP et communications internes. Cette solution digitale transforme l'expérience collaborateur en offrant un écosystème numérique intégré, performant et accessible depuis tous les appareils.
+    </div>
+
+    <div class="features__section">
+      <div class="feature__card">
+        <span class="feature__icon">👤</span>
+        <h3 class="feature__title">Gestion RH Complète</h3>
+        <p class="feature__description">Module RH intégral avec gestion des profils, plannings, congés, formations et évaluations. Workflows automatisés et intégration SSO Active Directory pour une expérience utilisateur optimale.</p>
+      </div>
+
+      <div class="feature__card">
+        <span class="feature__icon">🏗️</span>
+        <h3 class="feature__title">Suivi Projets BTP</h3>
+        <p class="feature__description">Plateforme collaborative dédiée aux chantiers avec planning Gantt interactif, suivi budgétaire, module QSE et reporting temps réel pour MOA/MOE.</p>
+      </div>
+
+      <div class="feature__card">
+        <span class="feature__icon">📱</span>
+        <h3 class="feature__title">Application Mobile</h3>
+        <p class="feature__description">PWA native avec mode offline, géolocalisation GPS, scanner QR/codes-barres, signature électronique et synchronisation automatique pour équipes terrain.</p>
+      </div>
+
+      <div class="feature__card">
+        <span class="feature__icon">📊</span>
+        <h3 class="feature__title">Business Intelligence</h3>
+        <p class="feature__description">Dashboards interactifs, machine learning pour prédictions, data visualization avec D3.js et exports multi-formats. Aide à la décision basée sur l'IA.</p>
+      </div>
+
+      <div class="feature__card">
+        <span class="feature__icon">💬</span>
+        <h3 class="feature__title">Communication Unifiée</h3>
+        <p class="feature__description">Écosystème collaboratif avec messagerie instantanée, forums thématiques, visioconférence WebRTC et calendrier partagé pour optimiser la communication interne.</p>
+      </div>
+
+      <div class="feature__card">
+        <span class="feature__icon">🔒</span>
+        <h3 class="feature__title">Sécurité Avancée</h3>
+        <p class="feature__description">Architecture sécurisée RGPD avec chiffrement AES-256, authentification MFA, audit trail complet et gestion granulaire des permissions RBAC.</p>
+      </div>
+    </div>
+
+    <div class="tech__section">
+      <h2 class="tech__title">Stack Technologique</h2>
+      <div class="tech__grid">
+        <div class="tech__item">
+          <h4>Frontend</h4>
+          <p>Vue.js 3, TypeScript, Bootstrap CSS</p>
+        </div>
+        <div class="tech__item">
+          <h4>Backend</h4>
+          <p>Laravel/Lumen</p>
+        </div>
+        <div class="tech__item">
+          <h4>Bases de Données</h4>
+          <p>PostgreSQL, MySQL</p>
+        </div>
+        <div class="tech__item">
+          <h4>Infrastructure</h4>
+          <p>AWS/Azure, Server officiel et server test, Github CI/CD</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="work__section">
+      <h2 class="work__title">Développements Réalisés (une partie seulement)</h2>
+      <div class="work__grid">
+        <div class="work__item">
+          <h4>Responsive</h4>
+          <p>Maquetage intégrale puis développement complet du mode mobile de la plateforme</p>
+          <p class="work__tech">Vue.js, HTML/SCSS, Javascript</p>
+        </div>
+        <div class="work__item">
+          <h4>Inscription multiple</h4>
+          <p>Permettre à un utilisateur de pouvoir inscrire plusieurs autres personnes (en plus) sur le formulaire de création de déplacements</p>
+          <p class="work__tech">Vuejs, Lumen, PHP, MySQL</p>
+        </div>
+        <div class="work__item">
+          <h4>Recherche et Tri d'articles</h4>
+          <p>Ajout d'une fonctionnalités permettant d'effectuer un tri et une recherche d'articles à partir d'une partie du nom</p>
+          <p class="work__tech">Vuejs, Lumen, PHP, MySQL</p>
+        </div>
+        <div class="work__item">
+          <h4>Export de contacts</h4>
+          <p>Permettre l'export d'un contact à partir d'un numéro via fichier VCF</p>
+          <p class="work__tech">HTML/SCSS, Javascript</p>
+        </div>
+        <div class="work__item">
+          <h4>Insertion des emoticons</h4>
+          <p>Faire en sorte que les autheurs d'articles puissent insérer des émoticons en rédigeant un article, stockage des emoticons en base, modification du plugin WYSIWYG</p>
+          <p class="work__tech">MySQL, HTML/SCSS, PHP, VueJS, WYSIWYG</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

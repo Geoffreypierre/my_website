@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Chronofront</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.ico">
+    <link rel="stylesheet" href="assets/css/chronofront.css">
+</head>
+<body>
+<header class="l-header">
+    <nav class="nav">
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="scale_2 nav__item"><a href="index.html" class="nav__link">À propos</a></li>
+                <li class="scale_2 nav__item"><a href="index.html#skills" class="nav__link">Compétences</a></li>
+                <li class="scale_2 nav__item"><a href="#job" class="nav__link">Expériences</a></li>
+                <li class="scale_2 nav__item"><a href="personnalsProjects.html" class="nav__link">Projets</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="floating__elements">
+    <div class="floating__element">⏱️</div>
+    <div class="floating__element">📊</div>
+    <div class="floating__element">🏃</div>
+</div>
+
+<div class="chronofront__container">
+    <div class="chronofront__hero">
+        <h1 class="chronofront__title">Chronofront</h1>
+        <p class="chronofront__subtitle">Plateforme de Chronométrage Sportif Avancée</p>
+
+        <div class="chronofront__description">
+            Solution complète de chronométrage en temps réel développée pour les événements sportifs modernes. Intégration parfaite avec équipements RFID et hébergement sur infrastructure Raspberry Pi pour une portabilité exceptionnelle.
+        </div>
+
+        <div class="features__section">
+            <div class="feature__card">
+                <span class="feature__icon">📝</span>
+                <h3 class="feature__title">Formulaires Dynamiques</h3>
+                <p class="feature__description">Interface de gestion avancée pour création de formulaires d'inscription personnalisés avec validation temps réel.</p>
+            </div>
+
+            <div class="feature__card">
+                <span class="feature__icon">🏆</span>
+                <h3 class="feature__title">Tri et Classification</h3>
+                <p class="feature__description">Moteur de tri sophistiqué pour classification automatique par courses, catégories d'âge et performances.</p>
+            </div>
+
+            <div class="feature__card">
+                <span class="feature__icon">⏱️</span>
+                <h3 class="feature__title">Chronométrage Temps Réel</h3>
+                <p class="feature__description">Capture automatique via technologie RFID avec mise à jour instantanée des classements et WebSockets.</p>
+            </div>
+
+            <div class="feature__card">
+                <span class="feature__icon">🎨</span>
+                <h3 class="feature__title">Interface Moderne</h3>
+                <p class="feature__description">Design responsive et PWA pour utilisation optimale sur tous appareils, des smartphones aux écrans de contrôle.</p>
+            </div>
+
+            <div class="feature__card">
+                <span class="feature__icon">🗂️</span>
+                <h3 class="feature__title">Gestion des Données</h3>
+                <p class="feature__description">Système complet avec opérations batch, suppression sécurisée et archivage automatique des participants.</p>
+            </div>
+
+            <div class="feature__card">
+                <span class="feature__icon">📊</span>
+                <h3 class="feature__title">Analytics et Reporting</h3>
+                <p class="feature__description">Génération automatique de rapports PDF, statistiques avancées et visualisations interactives.</p>
+            </div>
+        </div>
+
+        <div class="tech__section">
+            <h2 class="tech__title">Technologies Utilisées</h2>
+            <div class="tech__grid">
+                <div class="tech__item">
+                    <h4>Backend</h4>
+                    <p>NodeJS axios, MySQL optimisée</p>
+                </div>
+                <div class="tech__item">
+                    <h4>Frontend</h4>
+                    <p>Vue.js, JavaScript, CSS3 moderne, PWA</p>
+                </div>
+                <div class="tech__item">
+                    <h4>Infrastructure</h4>
+                    <p>Raspberry Pi 3, Linux Debian, Apache/Nginx</p>
+                </div>
+                <div class="tech__item">
+                    <h4>Hardware</h4>
+                    <p>BadgeTrack 3.0, RFID multi-fréquences, WiFi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="work__section">
+            <h2 class="work__title">Développements Réalisés</h2>
+
+            <div class="work__grid">
+                <div class="work__item">
+                    <h4>Ajout de Champs Formulaire</h4>
+                    <p>Extension du schéma MySQL avec nouvelles colonnes et modification des composants Vue.js pour intégrer des champs personnalisés avec validation côté client et serveur NodeJS.</p>
+                </div>
+                <div class="work__item">
+                    <h4>Système de Classement</h4>
+                    <p>Implémentation d'algorithmes de tri multi-critères en JavaScript avec requêtes MySQL optimisées GROUP BY et ORDER BY pour classification automatique temps réel.</p>
+                </div>
+                <div class="work__item">
+                    <h4>Suppression Batch</h4>
+                    <p>Développement d'endpoints REST avec transactions MySQL et interface Vue.js utilisant axios pour opérations de suppression groupée avec confirmation utilisateur.</p>
+                </div>
+                <div class="work__item">
+                    <h4>Refonte Interface</h4>
+                    <p>Migration vers CSS Grid et Flexbox avec design system cohérent, optimisation responsive mobile et intégration PWA pour expérience utilisateur moderne.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
