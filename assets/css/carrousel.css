@@ -1,0 +1,166 @@
+.carousel-3d-container {
+    perspective: 3000px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    background: radial-gradient(ellipse at center, rgba(15, 133, 56, 0.1) 0%, rgba(7, 21, 31, 0.8) 70%);
+}
+
+.carousel-3d {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+    cursor: grab;
+}
+
+.carousel-3d:active {
+    cursor: grabbing;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 3px solid rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    transition: all 0.6s ease;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(39, 186, 139, 0.1), transparent);
+    transition: left 0.8s ease;
+}
+
+.carousel-item:hover::before {
+    left: 100%;
+}
+
+.carousel-item:hover {
+    box-shadow: 0 20px 40px rgba(39, 186, 139, 0.3);
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+.carousel-item h3 {
+    color: #27BA8B;
+    font-family: 'comfortaa_bold', sans-serif;
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+}
+
+.carousel-item p {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'comfortaa_light', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.tech-tag {
+    background: rgba(39, 186, 139, 0.2);
+    color: #27BA8B;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    border: 1px solid rgba(39, 186, 139, 0.3);
+    font-family: 'comfortaa_regular', sans-serif;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.control-btn {
+    background: rgba(11, 46, 43, 0.6);
+    border: 2px solid rgba(60, 172, 131, 0.3);
+    color: #27BA8B;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    border-color: #27BA8B;
+    background: rgba(39, 186, 139, 0.2);
+    transform: scale(1.1);
+}
+
+.smartchess {
+    background: url(../img/smartchess.png);
+    background-size: cover;
+}
+
+.delta {
+    background: url(../img/delta_mobile.png);
+    background-size: cover;
+}
+
+.puissance4 {
+    background: url(../img/power4ia.png);
+    background-size: cover;
+}
+
+.cheztalia {
+    background: url(../img/cheztalia_mobile.png);
+    background-size: cover;
+}
+
+.trueffet {
+    background: url(../img/trueffet_mobile.png);
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-3d-container {
+        height: 450px;
+    }
+
+    .carousel-3d {
+        width: 250px;
+        height: 350px;
+    }
+
+    .carousel-item {
+        width: 230px;
+        height: 330px;
+        padding: 15px;
+    }
+}

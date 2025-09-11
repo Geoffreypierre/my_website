@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/icon.ico">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="js/main.js" rel="script"></script>
+    <link rel="stylesheet" href="assets/css/carrousel.css">
 </head>
 <body>
 <header class="l-header">
@@ -49,12 +50,73 @@
     </div>
 </section>
 
+<h2 class="section-title">Projets Personnels</h2>
+
+<div class="carousel-3d-container">
+    <div class="carousel-3d" id="carousel3d">
+        <a href="https://github.com/Geoffreypierre/trueffet" class="trueffet carousel-item">
+<!--            <h3>Trueffet</h3>-->
+<!--            <p>Plateforme de vente de vinyl en ligne complète avec panier, Authentification et système de paiement sécurisé.</p>-->
+<!--            <div class="tech-tags">-->
+<!--                <span class="tech-tag">Symfony</span>-->
+<!--                <span class="tech-tag">MySQL</span>-->
+<!--                <span class="tech-tag">HTML/CSS</span>-->
+<!--                <span class="tech-tag">Javascript</span>-->
+<!--                <span class="tech-tag">Stripe</span>-->
+<!--            </div>-->
+        </a>
+
+        <a href="https://github.com/Geoffreypierre/power4ia" class="puissance4 carousel-item">
+<!--            <h3>IA puissance 4</h3>-->
+<!--            <p>Utilise un algorithme d'heuristique pour choisir le meilleur coup !</p>-->
+<!--            <div class="tech-tags">-->
+<!--                <span class="tech-tag">Python</span>-->
+<!--            </div>-->
+        </a>
+
+        <a href="https://github.com/Geoffreypierre/smartchess" class="smartchess carousel-item">
+<!--            <h3>Smartchess</h3>-->
+<!--            <p>Une application mobile d'échecs complète développée en Android studio.</p>-->
+<!--            <div class="tech-tags">-->
+<!--                <span class="tech-tag">Android Studio (Java)</span>-->
+<!--                <span class="tech-tag">Firebase</span>-->
+<!--            </div>-->
+        </a>
+
+        <a href="https://github.com/Geoffreypierre/DELTA" class="delta carousel-item">
+<!--            <h3>DeltÎ"</h3>-->
+<!--            <p>Calculatrice graphique basique, logiciel ElectronJS.</p>-->
+<!--            <div class="tech-tags">-->
+<!--                <span class="tech-tag">ElectronJS</span>-->
+<!--                <span class="tech-tag">Javascript</span>-->
+<!--                <span class="tech-tag">HTML/CSS</span>-->
+<!--            </div>-->
+        </a>
+
+        <a href="https://cheztalia.fr" class="cheztalia carousel-item">
+<!--            <h3>ChezTalia</h3>-->
+<!--            <p>Site vitrine de l'entreprise chezTalia.</p>-->
+<!--            <div class="tech-tags">-->
+<!--                <span class="tech-tag">HTML/CSS</span>-->
+<!--                <span class="tech-tag">Javascript</span>-->
+<!--            </div>-->
+        </a>
+    </div>
+</div>
+
+<div class="carousel-controls">
+    <button class="control-btn" onclick="rotateCarousel(-1)">‹</button>
+    <button class="control-btn" onclick="rotateCarousel(1)">›</button>
+</div>
+
+<script src="js/carrousel.js" defer></script>
+
+
 <section class="skills section" id="skills">
     <h2 class="section-title">Compétences professionnelles</h2>
     <div class="skills__container">
 
         <div class="skills__group">
-
             <svg class="background_green" width="625" height="700" viewBox="0 0 625 700" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="312.5" cy="350" rx="312.5" ry="350" fill="url(#paint0_radial_1_534)"/>
                 <defs>
@@ -65,327 +127,338 @@
                 </defs>
             </svg>
 
-            <h3 class="skills__group-title">Base de données</h3>
-            <div class="skills__subgroups">
-                <div class="skills__subgroup">
-                    <h4 class="skills__subgroup-title">Langages</h4>
-                    <div class="skills__content">
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Oracle</span>
-                                <p>Niveau de maîtrise : <a>Très avancé</a></p>
-                            </div>
-                            <div class="skills__bar skills__oracle"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">MySQL</span>
-                                <p>Niveau de maîtrise : <a>Très avancé</a></p>
-                            </div>
-                            <div class="skills__bar skills__mysql"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">PostgreSQL</span>
-                                <p>Niveau de maîtrise : <a>Très avancé</a></p>
-                            </div>
-                            <div class="skills__bar skills__postgresql"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">MariaDB</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
-                            </div>
-                            <div class="skills__bar skills__mariadb"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">MongoDB</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
-                            </div>
-                            <div class="skills__bar skills__mongodb"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">CASSANDRA</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
-                            </div>
-                            <div class="skills__bar skills__cassandra"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills__subgroup">
-                    <h4 class="skills__subgroup-title">Logiciels</h4>
-                    <div class="skills__content">
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Phpmyadmin</span>
-                                <p>Niveau de maîtrise : <a>Très Avancé</a></p>
-                            </div>
-                            <div class="skills__bar skills__phpmyadmin"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">MySQL</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
-                            </div>
-                            <div class="skills__bar skills__mysql_software"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Mongo DB</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
-                            </div>
-                            <div class="skills__bar skills__mongodb"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Firebase</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
-                            </div>
-                            <div class="skills__bar skills__firebase"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- WEB !-->
-        <div class="skills__group">
-            <svg class="background_green" width="625" height="700" viewBox="0 0 625 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="312.5" cy="350" rx="312.5" ry="350" fill="url(#paint0_radial_1_534)"/>
-                <defs>
-                    <radialGradient id="paint0_radial_1_534" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(312.5 350) rotate(90) scale(350 312.5)">
-                        <stop stop-color="#3CAC83"/>
-                        <stop offset="1" stop-color="#0F8538" stop-opacity="0"/>
-                    </radialGradient>
-                </defs>
-            </svg>
             <h3 class="skills__group-title">Développement Web</h3>
             <div class="skills__subgroups">
                 <div class="skills__subgroup">
-                    <h4 class="skills__subgroup-title">Langages</h4>
+                    <h4 class="skills__subgroup-title">Travaux réalisés</h4>
                     <div class="skills__content">
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML/CSS</span>
-                                <p>Niveau de maîtrise : <a>Très avancé</a></p>
+
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Plateforme de covoiturage</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__html"></div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Application web complète permettant aux utilisateurs de proposer et rechercher des trajets de covoiturage avec système de réservation et gestion des profils utilisateurs.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>HTML/CSS</li>
+                                    <li>PHP (natif)</li>
+                                    <li>MySQL</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon'></i>
-                                <span class="skills__name">Javascript</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Forum</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__js"></div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Forum communautaire avec système d'authentification, création de topics, réponses hiérarchisées et modération avancée avec gestion des rôles.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>HTML/CSS</li>
+                                    <li>PHP (natif)</li>
+                                    <li>MySQL</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">PHP</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Version simplifiée de Google Maps (Maps)</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__php"></div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Système de navigation avec calcul d'itinéraires optimaux utilisant l'algorithme A* et affichage cartographique interactif en temps réel et historique des parcours déjà effectués.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>HTML/CSS</li>
+                                    <li>PHP (natif)</li>
+                                    <li>Algorithmie avancée (A*)</li>
+                                    <li>MySQL</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">WebGL</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Site de création de cocktail</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__webgl"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills__subgroup">
-                    <svg class="background_green" width="625" height="700" viewBox="0 0 625 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="312.5" cy="350" rx="312.5" ry="350" fill="url(#paint0_radial_1_534)"/>
-                        <defs>
-                            <radialGradient id="paint0_radial_1_534" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(312.5 350) rotate(90) scale(350 312.5)">
-                                <stop stop-color="#3CAC83"/>
-                                <stop offset="1" stop-color="#0F8538" stop-opacity="0"/>
-                            </radialGradient>
-                        </defs>
-                    </svg>
-                    <h4 class="skills__subgroup-title">Frameworks</h4>
-                    <div class="skills__content">
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">VUEJS (2 et 3)</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Application de création et partage de recettes de cocktails avec API REST, système de notation et recherche avancée par ingrédients.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>HTML/CSS</li>
+                                    <li>Symfony (API Platform)</li>
+                                    <li>VueJS</li>
+                                    <li>MySQL</li>
+                                    <li>Javascript</li>
+                                </ul>
                             </div>
-                            <div class="skills__bar skills__vuejs"></div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Symfony (4 - 7)</span>
-                                <p>Niveau de maîtrise : <a>Avancé - Très avancé</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Plateforme de gestion d'événements et de tournois</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__symfony"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Lumen</span>
-                                <p>Niveau de maîtrise : <a>Modéré - avancé</a></p>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Plateforme complète pour organiser des événements et tournois avec inscriptions, gestion des équipes, système d'authentification et gestions d'utilisateurs.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>HTML/CSS</li>
+                                    <li>Symfony</li>
+                                    <li>MySQL</li>
+                                    <li>Javascript</li>
+                                </ul>
                             </div>
-                            <div class="skills__bar skills__lumen"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Angular</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
-                            </div>
-                            <div class="skills__bar skills__angular"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">React</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
-                            </div>
-                            <div class="skills__bar skills__react"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SOFTWARE !-->
         <div class="skills__group">
             <svg class="background_green" width="625" height="700" viewBox="0 0 625 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="312.5" cy="350" rx="312.5" ry="350" fill="url(#paint0_radial_1_534)"/>
+                <ellipse cx="312.5" cy="350" rx="312.5" ry="350" fill="url(#paint0_radial_1_535)"/>
                 <defs>
-                    <radialGradient id="paint0_radial_1_534" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(312.5 350) rotate(90) scale(350 312.5)">
+                    <radialGradient id="paint0_radial_1_535" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(312.5 350) rotate(90) scale(350 312.5)">
                         <stop stop-color="#3CAC83"/>
                         <stop offset="1" stop-color="#0F8538" stop-opacity="0"/>
                     </radialGradient>
                 </defs>
             </svg>
+
             <h3 class="skills__group-title">Développement Logiciel</h3>
             <div class="skills__subgroups">
                 <div class="skills__subgroup">
-                    <h4 class="skills__subgroup-title">Langages</h4>
+                    <h4 class="skills__subgroup-title">Travaux réalisés</h4>
                     <div class="skills__content">
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Python</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
+
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Jeu de scrabble</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__python"></div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Implémentation complète du jeu de Scrabble en java avec interface dans le terminal, validation des mots, calcul des scores jusqu'à 4 joueurs.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Java</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Java</span>
-                                <p>Niveau de maîtrise : <a>Très avancé</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Jeux de plateau : Les Aventuriers du rail</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__java"></div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Adaptation numérique du jeu de plateau avec interface graphique interactive, multijoueur local et respect des règles originales. Les fonctionnalités sont codées en Java et l'interface graphique est programmée en JavaFX accompagnée du plateau sous forme de fichier XML.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Java (Backend)</li>
+                                    <li>JavaFX (Frontend)</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Scala</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Système de réservation d'hôtels</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__scala"></div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Application de gestion hôtelière avec réservations, gestion des chambres, programmé 4 fois différemment selon 4 type de service web différent : RMI, SOAP, REST et GRPC</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Spring Boot</li>
+                                    <li>JDBC</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">C</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Système d'administration de bâtiments et de salles</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__c"></div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Plateforme de gestion immobilière en Spring Boot JPA avec planification des espaces, répartition des classes et bâtiments.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Spring Boot (JPA)</li>
+                                    <li>Thymeleaf</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Common Lisp</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>Résolveur de sudoku, taquin et hanoï</span>
+                                <button class="toggle-btn">+</button>
                             </div>
-                            <div class="skills__bar skills__commonlisp"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills__subgroup">
-                    <h4 class="skills__subgroup-title">Frameworks</h4>
-                    <div class="skills__content">
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Spring Boot</span>
-                                <p>Niveau de maîtrise : <a>Avancé</a></p>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Collection d'algorithmes de résolution pour puzzles classiques en python avec visualisation étape par étape et analyse de complexité.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Python</li>
+                                </ul>
                             </div>
-                            <div class="skills__bar skills__springboot"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">JavaFX</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
-                            </div>
-                            <div class="skills__bar skills__javafx"></div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Jakarta</span>
-                                <p>Niveau de maîtrise : <a>Modéré</a></p>
-                            </div>
-                            <div class="skills__bar skills__jakarta"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="skills__group">
+            <svg class="background_green" width="625" height="700" viewBox="0 0 625 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="312.5" cy="350" rx="312.5" ry="350" fill="url(#paint0_radial_1_535)"/>
+                <defs>
+                    <radialGradient id="paint0_radial_1_535" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(312.5 350) rotate(90) scale(350 312.5)">
+                        <stop stop-color="#3CAC83"/>
+                        <stop offset="1" stop-color="#0F8538" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+
+            <h3 class="skills__group-title">Développement Mobile</h3>
+            <div class="skills__subgroups">
+                <div class="skills__subgroup">
+                    <h4 class="skills__subgroup-title">Travaux réalisés</h4>
+                    <div class="skills__content">
+
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>App de recherche de trains disponible</span>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Application mobile de recherche de trajets en trains avec horaires en temps réel, utilisation de l'API SNCF.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Android Studio (Java)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>App de liste de tâches</span>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Une application qui permet de créer, organiser et gérer des tâches avec différents niveaux de priorité, automatiquement classées par date</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Android Studio (Java)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>App de connexion, inscription et gestions d'utilisateur</span>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Système d'authentification mobile sécurisé avec gestion complète des profils utilisateurs.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Android Studio (Java)</li>
+                                    <li>SQLite</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>App de simulation robot QT</span>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Simulateur robotique interactif permettant la programmation et visualisation de robots virtuels avec interface de contrôle intuitive.</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Flutter</li>
+                                    <li>HTML/CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="work__item">
+                            <div class="work__header">
+                                <span>App de streaming</span>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <div class="work__details">
+                                <div class="work__description">
+                                    <p>Application de streaming vidéo avec lecture adaptative, historique de visionnage et contrôles de lecture avancés (lib vlc).</p>
+                                </div>
+                                <ul class="work__tech-list">
+                                    <li>Android Studio (Java)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
+
 <div class="universe_container">
     <span class="universe_title">My Universe ...</span>
     <img class="universe" src="assets/img/universe.svg">
 </div>
-</body>
-</html>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__catchphrase">
+            Prêt à collaborer sur votre prochain projet innovant !
+        </div>
+
+        <div class="footer__links">
+            <a href="https://github.com/Geoffreypierre" class="footer__link" target="_blank" rel="noopener noreferrer">
+                <svg class="footer__icon" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>Geoffrey Pierre</span>
+            </a>
+
+            <a href="assets/img/cv.pdf" class="footer__link" target="_blank" rel="noopener noreferrer">
+                <svg class="footer__icon" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+                <span>Consulter mon CV</span>
+            </a>
+        </div>
+
+        <div class="footer__copyright">
+            © 2025 Geoffrey Pierre. Tous droits réservés. | Étudiant en Master II Génie Logiciel
+        </div>
+    </div>
+</footer>
