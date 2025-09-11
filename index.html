@@ -50,68 +50,6 @@
     </div>
 </section>
 
-<h2 class="section-title">Projets Personnels</h2>
-
-<div class="carousel-3d-container">
-    <div class="carousel-3d" id="carousel3d">
-        <a href="https://github.com/Geoffreypierre/trueffet" class="trueffet carousel-item">
-<!--            <h3>Trueffet</h3>-->
-<!--            <p>Plateforme de vente de vinyl en ligne complète avec panier, Authentification et système de paiement sécurisé.</p>-->
-<!--            <div class="tech-tags">-->
-<!--                <span class="tech-tag">Symfony</span>-->
-<!--                <span class="tech-tag">MySQL</span>-->
-<!--                <span class="tech-tag">HTML/CSS</span>-->
-<!--                <span class="tech-tag">Javascript</span>-->
-<!--                <span class="tech-tag">Stripe</span>-->
-<!--            </div>-->
-        </a>
-
-        <a href="https://github.com/Geoffreypierre/power4ia" class="puissance4 carousel-item">
-<!--            <h3>IA puissance 4</h3>-->
-<!--            <p>Utilise un algorithme d'heuristique pour choisir le meilleur coup !</p>-->
-<!--            <div class="tech-tags">-->
-<!--                <span class="tech-tag">Python</span>-->
-<!--            </div>-->
-        </a>
-
-        <a href="https://github.com/Geoffreypierre/smartchess" class="smartchess carousel-item">
-<!--            <h3>Smartchess</h3>-->
-<!--            <p>Une application mobile d'échecs complète développée en Android studio.</p>-->
-<!--            <div class="tech-tags">-->
-<!--                <span class="tech-tag">Android Studio (Java)</span>-->
-<!--                <span class="tech-tag">Firebase</span>-->
-<!--            </div>-->
-        </a>
-
-        <a href="https://github.com/Geoffreypierre/DELTA" class="delta carousel-item">
-<!--            <h3>DeltÎ"</h3>-->
-<!--            <p>Calculatrice graphique basique, logiciel ElectronJS.</p>-->
-<!--            <div class="tech-tags">-->
-<!--                <span class="tech-tag">ElectronJS</span>-->
-<!--                <span class="tech-tag">Javascript</span>-->
-<!--                <span class="tech-tag">HTML/CSS</span>-->
-<!--            </div>-->
-        </a>
-
-        <a href="https://cheztalia.fr" class="cheztalia carousel-item">
-<!--            <h3>ChezTalia</h3>-->
-<!--            <p>Site vitrine de l'entreprise chezTalia.</p>-->
-<!--            <div class="tech-tags">-->
-<!--                <span class="tech-tag">HTML/CSS</span>-->
-<!--                <span class="tech-tag">Javascript</span>-->
-<!--            </div>-->
-        </a>
-    </div>
-</div>
-
-<div class="carousel-controls">
-    <button class="control-btn" onclick="rotateCarousel(-1)">‹</button>
-    <button class="control-btn" onclick="rotateCarousel(1)">›</button>
-</div>
-
-<script src="js/carrousel.js" defer></script>
-
-
 <section class="skills section" id="skills">
     <h2 class="section-title">Compétences professionnelles</h2>
     <div class="skills__container">
@@ -430,6 +368,25 @@
     </div>
 </section>
 
+<h2 class="section-title">Projets Personnels</h2>
+
+<div class="carousel-3d-container">
+    <div class="carousel-3d" id="carousel3d">
+        <a href="https://github.com/Geoffreypierre/trueffet" class="trueffet carousel-item"></a>
+        <a href="https://github.com/Geoffreypierre/power4ia" class="puissance4 carousel-item"></a>
+        <a href="https://github.com/Geoffreypierre/smartchess" class="smartchess carousel-item"></a>
+        <a href="https://github.com/Geoffreypierre/DELTA" class="delta carousel-item"></a>
+        <a href="https://cheztalia.fr" class="cheztalia carousel-item"></a>
+    </div>
+</div>
+
+<div class="carousel-controls">
+    <button class="control-btn" onclick="rotateCarousel(-1)">‹</button>
+    <button class="control-btn" onclick="rotateCarousel(1)">›</button>
+</div>
+
+<script src="js/carrousel.js" defer></script>
+
 <div class="universe_container">
     <span class="universe_title">My Universe ...</span>
     <img class="universe" src="assets/img/universe.svg">
@@ -462,3 +419,16 @@
         </div>
     </div>
 </footer>
+<script>
+    document.querySelectorAll('.work__header').forEach((header) => {
+        header.addEventListener('click', () => {
+            const btn = header.querySelector('.toggle-btn');
+            const details = header.nextElementSibling;
+
+            btn.classList.toggle('active');
+            details.classList.toggle('show');
+        });
+    });
+</script>
+</body>
+</html>

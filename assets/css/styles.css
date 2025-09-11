@@ -290,15 +290,18 @@ html {
     padding: 0.5rem 0;
 }
 
+.work__header span {
+    width: 80%;
+}
+
 .toggle-btn {
-    background: none;
-    border: none;
+    background: rgba(11, 46, 43, 0.6);
+    border: 2px solid rgba(60, 172, 131, 0.3);
     color: #27BA8B;
-    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    width: 24px;
-    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;

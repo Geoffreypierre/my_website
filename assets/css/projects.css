@@ -131,6 +131,17 @@ a {
     top: 0;
 }
 
+.projects__picture__background__effect__invert__cheztalia {
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 225px;
+    height: 352px;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
 .projects__picture__background__effect__invert__smartchess {
     background: white;
     border-radius: 10px;

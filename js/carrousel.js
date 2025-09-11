@@ -43,7 +43,7 @@ document.addEventListener('mousemove', (e) => {
     const deltaX = currentX - startX;
 
     if (Math.abs(deltaX) > 50) {
-        const direction = deltaX > 0 ? -1 : 1;
+        const direction = deltaX > 0 ? 1 : -1;
         rotateCarousel(direction);
         isDragging = false;
         carousel.style.cursor = 'grab';
